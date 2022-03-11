@@ -26,7 +26,7 @@
     "url": "https://github.com/sfatihk/electron-tray-window/issues"
   },
   "homepage": "https://github.com/sfatihk/electron-tray-window#readme",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^3.0.10"
   },
   "peerDependencies": {
