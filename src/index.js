@@ -120,8 +120,7 @@ function setWindowAutoHide() {
       ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
     }
   });
-  window.on("close", function(event) {
-    event.preventDefault();
+  window.on("close", function() {
     window.hide();
   });
 }
