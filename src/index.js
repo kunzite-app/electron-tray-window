@@ -114,7 +114,9 @@ function setWindowAutoHide() {
     if (!window.webContents.isDevToolsOpened()) {
 
       setTimeout(() => {
-        window.hide();
+        try {
+          window.hide();
+        } catch(err){};
       }, 75);
       
       ipcMain.emit("tray-window-hidden", { window: window, tray: tray });
