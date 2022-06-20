@@ -198,4 +198,4 @@ function calculateWindowPosition() {
   return { x: x, y: y };
 }
 
-module.exports = { setOptions, setTray, setWindow, setWindowSize };
+module.exports = { setOptions, setTray, setWindow, setWindowSize, alignWindow };
